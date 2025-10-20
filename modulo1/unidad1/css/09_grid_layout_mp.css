@@ -1,0 +1,46 @@
+/* Contenedor principal centrado */
+body {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+    min-height: 100vh;       /* ocupa toda la altura de la ventana */
+    margin: 0;
+    background-color: #f0f0f0; /* fondo general */
+}
+
+/* Grid layout */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+    gap: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 900px; /* ancho máximo del layout */
+    width: 90%;       /* ancho adaptable */
+    background-color: #fff; /* fondo de la caja */
+}
+
+/* Header con línea solo debajo del texto */
+.header {
+    grid-area: header;
+    display: inline-block;       /* importante para que underline se ajuste al texto */
+    color: black;
+    background-color: skyblue;
+    font-size: 24px;
+    font-family: 'Merriweather', 'Georgia', serif;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.7;
+    text-decoration: underline; /* línea solo del texto */
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    padding: 10px 20px;
+    margin: 0 auto;             /* centra el header dentro del grid */
+}

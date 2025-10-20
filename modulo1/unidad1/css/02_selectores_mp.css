@@ -1,0 +1,32 @@
+.title{
+    color: black;
+    background-color: skyblue;
+    text-align: center;
+    font-size: 32px;
+
+
+}
+
+ul > li {
+    color: black ;
+    background-color: skyblue;
+    text-align: center;
+    
+}
+
+
+a:hover { 
+    color: black  ;
+    text-decoration: underline;
+
+    
+}
+
+
+input [type="text"] {
+    border:2px solid black ;
+    padding :5px;
+
+    
+}
+
