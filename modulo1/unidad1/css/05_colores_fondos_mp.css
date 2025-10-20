@@ -1,0 +1,10 @@
+.fondo {
+    color: black;
+    background-image: url("lol.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 150, 150, 1.5); 
+    padding: 170px;
+    text-align: center;
+    font-size: 75px;
+}

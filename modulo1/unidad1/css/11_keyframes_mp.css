@@ -1,0 +1,17 @@
+@keyframes mover {
+    0% { transform: translateX(0); background-color: lightcoral; }
+    50% { transform: translateX(100px); background-color: lightgreen; }
+    100% { transform: translateX(0); background-color: lightcoral; }
+}
+
+.caja {
+    width: 100px;
+    height: 100px; /* corregido */
+    background-color: red;
+    animation: mover 0.8s infinite ease-in-out; /* tiempo un poco más visible */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* para centrar texto si hay */
+    color: white;        /* texto visible sobre fondo */
+    border-radius: 8px;
+}
