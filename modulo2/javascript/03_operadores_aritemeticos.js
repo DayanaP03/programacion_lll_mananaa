@@ -50,22 +50,6 @@ console.log ("o Or ||", "5" <=5|| "6">=4);
 console.log ("Negacion !", !(5==5));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 console.log("Tipo de variable", typeof(numeros));
 
 
