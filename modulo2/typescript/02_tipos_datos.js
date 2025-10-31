@@ -1,0 +1,14 @@
+var edad = 30;
+var nombre = "Juan";
+var activo = true;
+var valor = 6;
+if (edad > 18 && activo) {
+    console.log('trabajador activo');
+}
+else {
+    console.log('no trabaja');
+}
+var frutas = ['manzana', 'banana', 'naranja'];
+for (var i = 0; i < frutas.length; i++) {
+    console.log(frutas[i]);
+}

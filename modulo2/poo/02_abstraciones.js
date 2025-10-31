@@ -15,7 +15,6 @@ class Persona {
     }
 
 }
-
 const pedro =new Persona('Pedro', '17');
 pedro.mayorEdad();
 pedro.mostrar();
