@@ -1,44 +1,51 @@
-console.log("VARIABLES");
+console.log("VARIABLES - FUNERARIA ETERNA MEMORIA  🕊️");
 
 // String
-let saludo = "Hola utilizando variables";
-console.log("Variable Saludo:", saludo);
-console.log("Tipo de variable:", typeof(saludo));
+let nombreFuneraria = "Funeraria  Eterna Memoria ";
+console.log("Nombre de la Funeraria:", nombreFuneraria);
+console.log("Tipo de variable:", typeof(nombreFuneraria));
 
 // Número
-let numero = 256;
-console.log("Variable Numero:", numero);
-console.log("Tipo de variable:", typeof(numero));
+let añosDeServicio = 25;
+console.log("Años de servicio:", añosDeServicio);
+console.log("Tipo de variable:", typeof(añosDeServicio));
 
 // Boolean
-let booleana = true;
-console.log("Variable Booleana:", booleana);
-console.log("Tipo de variable:", typeof(booleana));
+let servicioDisponible = true;
+console.log("Servicio disponible:", servicioDisponible);
+console.log("Tipo de variable:", typeof(servicioDisponible));
 
 // Undefined
-let indefinida = undefined;
-console.log("Variable Indefinida:", indefinida);
-console.log("Tipo de variable:", typeof(indefinida));
+let proximoEvento;
+console.log("Próximo evento:", proximoEvento);
+console.log("Tipo de variable:", typeof(proximoEvento));
 
 // Null
-let nula = null;
-console.log("Variable Nula:", nula);
-console.log("Tipo de variable:", typeof(nula)); // devuelve "object" por una curiosidad del lenguaje
+let clienteActual = null;
+console.log("Cliente actual:", clienteActual);
+console.log("Tipo de variable:", typeof(clienteActual)); // devuelve "object" por curiosidad del lenguaje
 
 // BigInt
-let bigentero = 8765675675785463654n;
-console.log("Variable BigEntero:", bigentero);
-console.log("Tipo de variable:", typeof(bigentero));
+let ingresosAnuales = 987654321987654321n;
+console.log("Ingresos anuales (estimado):", ingresosAnuales);
+console.log("Tipo de variable:", typeof(ingresosAnuales));
 
 // Objeto
-let objeto = {
-    nombre: "Dayana",
-    edad: 30
+let ataud = {
+    tipo: "Madera de roble",
+    precio: 850.50,
+    incluyeFlores: true
 };
-console.log("Variable Objeto:", objeto);
-console.log("Tipo de variable:", typeof(objeto));
+console.log("Datos del ataúd:", ataud);
+console.log("Tipo de variable:", typeof(ataud));
 
 // Arreglo
-let numeros = [12, 12, 22, 34, 4, 4];
-console.log("Variable Arreglo:", numeros);
-console.log("Tipo de variable:", typeof(numeros)); // "object", los arrays también son objetos
+let servicios = [
+    "Cremación",
+    "Velatorio",
+    "Traslado",
+    "Asesoría legal",
+    "Acompañamiento familiar"
+];
+console.log("Servicios disponibles:", servicios);
+console.log("Tipo de variable:", typeof(servicios)); // "object", los arrays también son objetos

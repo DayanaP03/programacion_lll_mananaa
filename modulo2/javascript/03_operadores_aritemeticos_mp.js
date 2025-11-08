@@ -1,71 +1,30 @@
-console.log("OPERADORES ARITEMETICOS")
+// OPERADORES EN UNA FUNERARIA 🕊️
 
+let precioAtaud = 850;      
+let precioCremacion = 300;
+let descuento = 0.10;         
+let iva = 0.15;              
 
-numero1=20;
-numero2=5;
+let subtotal = precioAtaud + precioCremacion;
+let montoDescuento = subtotal * descuento;
+let totalSinIva = subtotal - montoDescuento;
+let totalConIva = totalSinIva + (totalSinIva * iva);
 
+let servicioPremium = totalConIva > 1000 && descuento <= 0.10;
 
-console.log("suma" );
-suma =numero1+numero2;
+// Mostramos en la página
+let resultado = `
+    <h2>Resumen del Servicio Funerario 🕊️</h2>
+    <p><strong>Precio del ataúd:</strong> $${precioAtaud}</p>
+    <p><strong>Precio de la cremación:</strong> $${precioCremacion}</p>
+    <p><strong>Subtotal:</strong> $${subtotal}</p>
+    <p><strong>Descuento (10%):</strong> -$${montoDescuento.toFixed(2)}</p>
+    <p><strong>Total sin IVA:</strong> $${totalSinIva.toFixed(2)}</p>
+    <p><strong>Total con IVA (15%):</strong> $${totalConIva.toFixed(2)}</p>
+    <hr>
+    <p><strong>¿El total supera los $1000?</strong> ${totalConIva > 1000}</p>
+    <p><strong>¿Descuento mayor a $50?</strong> ${montoDescuento > 50}</p>
+    <p><strong>¿Servicio Premium?</strong> ${servicioPremium}</p>
+`;
 
-console.log ("Resultado", suma);
-console.log("resta");
-
-resta= numero1-numero2;
-console.log ("Resultado", resta);
-console.log ("Multimplicacion ");
-
-multiplicacion= numero1*numero2;
-console.log("Resultado" ,multiplicacion);
-console.log ("Division ");
-division = numero1/numero2;
-console.log("Resultado", division);
-console.log("Modulo ");
-modulo= numero1/numero2;
-console.log("Resultado", division);
-
-console.log("Modulo");
-modulo= numero1%numero2;
-console.log("Resultado", modulo);
-console.log ("Potencia");
-potencia= numero1**numero2;
-console.log("Resultado", potencia);
-
-
-
-
-console.log("Operadores Comparacion") ;
-console.log("Igualdad debil==","5"==5);
-console.log("Igualdad estricta===", "5"===5) ;
-console.log("Desigualdad Debil==","5"==5);
-console.log("Mayor que >", "5">5);
-console.log("Menor que <", "5"<5);
-console.log("Mayor o igual>=", "5">=5);
-console.log("Mayor o igual<=", "5"<=5);
-
-
-console.log("Operaciones Logicas ");
-console.log("y And &&", "5"<=5 &&"5">=5);
-console.log ("o Or ||", "5" <=5|| "6">=4);
-console.log ("Negacion !", !(5==5));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log("Tipo de variable", typeof(numeros));
-
-
+document.getElementById("resultado").innerHTML = resultado;

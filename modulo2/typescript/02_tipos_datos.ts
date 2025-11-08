@@ -1,24 +1,24 @@
-let edad:number = 30;
+let edad: number = 30;
 let nombre: string = "Juan";
 let activo: boolean = true;
-let valor: any = 6
+let valor: any = 6;
 
-if (edad>18 && activo){
+if (edad > 18 && activo) {
     console.log('trabajador activo');
-}
-else{
+} else {
     console.log('no trabaja');
 }
 
 let frutas: string[] = ['manzana', 'banana', 'naranja'];
-for (let i=0; i<frutas.length; i++){
+for (let i = 0; i < frutas.length; i++) {
     console.log(frutas[i]);
 }
+
 enum Estado {
     Pendiente,
     Enviado,
     Entregado
 }
+
 console.log(Estado);
 console.log(Estado.Enviado);
-
