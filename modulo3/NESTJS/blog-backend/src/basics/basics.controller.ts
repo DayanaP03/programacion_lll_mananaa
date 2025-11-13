@@ -1,36 +1,50 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 import { BasicsService } from './basics.service';
+
 
 @Controller('basics')
 export class BasicsController {
-  constructor(private readonly basicsService: BasicsService) { }
+    constructor(private readonly basicsService: BasicsService) { }
 
+    @Get()
+    getMyFirstGet(): object {
+        return this.basicsService.getMyFirstGet();
+    }
 
-  @Get()
-  getMyFirsGet(): object {
-    return this.basicsService.getMyFirsGet();
-  }
+    @Get(':parametro')
+    getConParametros(@Param('parametro') parametro: string) {
+        return this.basicsService.getConParametros(parametro);
+    }
 
-  @Get(':parametro')
-  getConParametros(@Param('parametro') parametro: string) {
-    return this.basicsService.getConParametros(parametro);
+    @Post()
+    create(@Body() bodyPost: object) {
+        return this.basicsService.postFunction(bodyPost);
+    }
 
+    @Put(':id')
+    update(@Body() bodyPost: object,
+        @Param('id') id: string
+    ) {
+        return this.basicsService.putFunction(bodyPost, id);
+    }
 
-  }
-  @Post()
-  create(@Body() BodyPost: object) {
-    return this.basicsService.postFunction(BodyPost);
+    @Delete(':id')
+    delete(@Param('id') id: string) {
+        return this.basicsService.deleteFunction(id);
+    }
 
-  }
+    @Post('calculo-area-triangulo')
+    calculoTriangulo(@Body() bodyPost: object) {
+        return this.basicsService.calculoAreaTriangulo(bodyPost);
+    }
 
-  @Put(':id')
-  update(@Param('id')  object) {
-    return this.basicsService.updateFunction(id, bodyPost);
-  }
+    @Post('calculo-area-triangulo')
+    areaRectangulo(
+        @Param('ancho') ancho: number,
+        @Param('alto') alto: number
+    ) {
+        return this.basicsService.areaRectangulo(ancho, alto);
+    }
 
-  @Delete(':id')
-  delete(@Param('id') id: string) {
-    return this.basicsService.deleteFunction(id);
-  }
-
-
+    
+}
