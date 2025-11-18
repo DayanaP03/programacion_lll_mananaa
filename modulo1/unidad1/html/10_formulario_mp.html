@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <p><h1>Funeraria Eterna Memoria </h1></p>
+    <p>Nos comunicaremos con usted, en un momento para brindale mas informacion </p>
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" value="+593" pattern="\+593[0-9]{9}" placeholder="+593 987654321" required>
+        <input type="checkbox" id="aceptar" name="aceptar" required>
+        <label for="aceptar">Acepto los términos y condiciones</label>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>    
+    
+</body>
+</html>

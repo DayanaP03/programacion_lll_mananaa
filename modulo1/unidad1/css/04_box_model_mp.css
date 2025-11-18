@@ -1,0 +1,58 @@
+/* Caja principal */
+.caja_box_model {
+    width: 400px;                 /* ancho de la caja */
+    padding: 3px;                /* espacio interno */
+    margin: 19px auto;            /* centrado horizontal con margen superior */
+    background-color: skyblue;    /* fondo de la caja */
+    border: 2px solid #333;       /* borde visible */
+    border-radius: 10px;           /* esquinas redondeadas */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2); /* sombra */
+    box-sizing: border-box;        /* incluye padding y border en el ancho total */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Títulos y párrafos dentro de la caja */
+.caja_box_model p {
+    margin-bottom: 10 px;
+    line-height: 1;
+}
+
+/* Estilos de los labels */
+.caja_box_model label {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Estilos de los inputs */
+.caja_box_model input[type="text"],
+.caja_box_model input[type="tel"] {
+    width: 100%;               /* ocupa todo el ancho disponible */
+    padding: 6px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Checkbox y label alineados */
+.caja_box_model input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botón enviar */
+.caja_box_model input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.caja_box_model input[type="submit"]:hover {
+    background-color: #45a049;
+}
