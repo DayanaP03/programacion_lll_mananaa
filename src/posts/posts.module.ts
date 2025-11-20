@@ -10,10 +10,10 @@ import { Category } from '../categories/category.entity';
 export class PostsService {
   constructor(
     @InjectRepository(Post)
-    private readonly postRepository: Repository<Post>,,
+    private readonly postRepository: Repository<Post>,
 
     @InjectRepository(Category)
-    private readonly categoryRepository: Repository<Category>,,
+    private readonly categoryRepository: Repository<Category>,
   ) {}
 
   async create(createPostDto: CreatePostDto) {
