@@ -1,0 +1,31 @@
+.text_primario{
+    color: black;
+    background-color: skyblue;
+    font-size: 24px;
+    font-family: 'Merriweather', 'Georgia', serif;
+
+    font-weight: bold;
+    line-height: 1.7;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    white-space: nowrap;
+    ;
+
+}
+
+.text_secundadrio {
+    color: skyblue;
+    background-color: skyblue;
+    font-size: 14px;
+    font-family: 'Franklin Goth', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    white-space: nowrap;
+
+    
+}
