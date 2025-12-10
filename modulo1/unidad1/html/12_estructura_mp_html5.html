@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Layout y Grid — HTML5</title>
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">Funeraria Eterna Memoria</h>
+
+  </header>
+<style>
+        nav {
+          background-color: skyblue; 
+          padding: 10px 0;
+          text-align: center;
+        }
+
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        nav li {
+          display: inline-block;
+          margin: 0 15px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: #ffffff; /* blanco */
+          font-size: 18px;
+          font-weight: 500;
+          transition: color 0.3s;
+        }
+
+        nav a:hover {
+          color: #f1c40f; /* dorado suave al pasar el mouse */
+        }
+
+        /* Para pantallas pequeñas */
+        @media (max-width: 600px) {
+          nav li {
+            display: block;
+            margin: 8px 0;
+          }
+        }
+      </style>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#Salas">Nuestra Sala de Velación</a></li>
+          <li><a href="#Servicios">Servicios Funerarios</a></li>
+          <li><a href="#Programas">Programa del Servicio Funerario</a></li>
+          <li><a href="#Contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+
+  <main id="inicio">
+    <section id="flex">
+      <h3 style="text-align: center;">Sabemos que una despedida nunca es fácil,<br>
+      por eso ponemos a disposición un espacio de respeto y comprensión,<br>
+      donde cada detalle está pensado para honrar la vida y brindar consuelo a quienes quedan</h3>
+      
+
+      <div style="text-align: center;">
+      <img src="images/fachada-general.jpg" alt="Funeral"width="1200" height="500">
+      </div>
+
+
+
+      <article id="Salas"></article>
+        <h3>Nuestra Sala de Velación</h3>
+       <table border="1" cellpadding="30" cellspacing="15">
+      <tr>
+        <td>
+          <p><b>Sala de Velación o Capilla de Velación</b></p>
+          <p>Es el espacio principal donde los familiares y amigos pueden despedirse del difunto.</p>
+          <p>Suele estar decorada con flores, iluminación suave y asientos cómodos.</p>
+          <p>Máximo para 60 personas</p>
+        </td>
+        <td>
+
+          <p><b>Sala de Incineración</b></p>
+          <p>Solo accesible para personal autorizado.</p>
+          <p>Los familiares podrán ver a través de una ventana de vidrio.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><b>Sala de Acompañamiento o Consuelo</b></p>
+          <p>Espacio más íntimo donde los familiares pueden sentarse a conversar y recibir apoyo emocional.</p>
+          <p>Puede incluir servicios de café o refrigerios ligeros.</p>
+        </td>
+        <td>
+          <p><b>Sala Multiuso</b></p>
+          <p>Permite acomodar a un mayor número de personas y puede incluir equipo audiovisual para música o videos.</p>
+        </td>
+      </tr>
+    </table>
+      </article>
+
+
+    <hr>
+
+
+    <section id="Servicios">
+      <h3>Servicios Funerario</h3>
+      <p>
+       <ul>
+         <li>Traslado del fallecido</li>
+         <br>
+         <li>Velación y capilla</li>
+         <br>
+         <li>Preparación del cuerpo</li>
+         <br>
+         <li>Ataúdes y urnas</li>
+         <br>
+         <li>Certificados y trámites legales</li>
+         <br>
+         <li>Arreglos Florales</li>
+         <br>
+         <li>Documentación y trámites: registro civil, tasas, permiso de cremación, cobro de Montepío, etc.</li>
+         <br>
+         <li>Servicio religioso de acuerdo al culto</li>
+         <br>
+         <li>Servicio de Cremación</li>
+         <br>
+         <li>Inhumaciones</li>
+        </ul>
+      </p>
+
+        <section id="Programas">
+   
+        </section>
+
+        <table border="4">
+            <tr bgcolor="skyblue">
+                <th>
+                    Programa del Servicio Funerario</th>
+
+        <main>
+          <h3>Programa del Servicio Funerario</h3>
+       </th>
+            <th>
+                Fecha y hora
+            </th>
+            <th>
+                Actividad
+            
+            </th>
+        </tr>
+             <th>
+                Recepción de familiares y amigos
+            </th>
+            <th>
+                09:00 - 10:00
+            </th>
+            <th>
+         <div style="text-align:left; line-height:1.5;">
+         <div>1_Llegada al lugar de velación</div>
+         <div>2_Entrega de condolencias</div>
+         <div>3_Registro de asistentes (si aplica)</div>
+
+          </tr>
+             <th>
+                Ceremonia de apertura
+            </th>
+            <th>
+                10:00 – 10:15
+            </th>
+            <th>
+         <div style="text-align:left; line-height:1.5;">
+         <div>1_Palabras de bienvenida por el maestro de ceremonias</div>
+         <div>2_Introducción al homenaje y acompañamiento familiar</div>
+
+         
+          </tr>
+             <th>
+                Ritos religiosos o espirituales
+            </th>
+            <th>
+                10:15 – 11:00
+            </th>
+            <th>
+         <div style="text-align:left; line-height:1.5;">
+         <div>1_Misa, oración o ceremonia según creencias</div>
+         <div>2_Lecturas de textos sagrados o pasajes significativos</div>
+         <div>3_Música solemne o himnos</div>
+
+          </tr>
+             <th>
+                Homenaje y despedida
+            </th>
+            <th>
+                11:00 – 11:30
+            </th>
+            <th>
+         <div style="text-align:left; line-height:1.5;">
+         <div>1_Lectura de mensajes y recuerdos de familiares y amigos</div>
+         <div>2_Proyección de fotos o videos del ser querido</div>
+         <div>3_Palabras finales por familiares o representantes</div>
+
+           </tr>
+             <th>
+                Traslado al lugar de descanso final
+            </th>
+            <th>
+               11:30 – 12:00
+            </th>
+            <th>
+         <div style="text-align:left; line-height:1.5;">
+         <div>1_Salida hacia el cementerio o crematorio</div>
+         <div>2_Procesión acompañada por familiares y amigos</div>
+
+             </tr>
+             <th>
+                Ceremonia final
+            </th>
+            <th>
+               12:00 – 12:30
+            </th>
+            <th>
+         <div style="text-align:left; line-height:1.5;">
+         <div>1_Últimas palabras o bendición</div>
+         <div>2_Colocación del ataúd o urna</div>
+         <div>3_Ritos finales (flores, velas, momentos de silencio)</div>
+
+                </tr>
+             <th>
+                Recepción opcional
+            </th>
+            <th>
+               12:30 – 13:30
+            </th>
+            <th>
+         <div style="text-align:left; line-height:1.5;">
+         <div>1_Espacio para compartir recuerdos y brindar consuelo</div>
+         <div>2_Conversación y apoyo entre familiares y amigos</div> </table>  </section>
+   
+
+
+          <section id="Contacto">
+          <p><h3>Contactanos</h3></p>
+          <p>Nos comunicaremos con usted, en un momento para brindale mas informacion </p>
+          <form action="procesar.php" method="post">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" value="+593" pattern="\+593[0-9]{9}" placeholder="+593 987654321" required>
+              <input type="checkbox" id="aceptar" name="aceptar" required>
+              <label for="aceptar">Acepto los términos y condiciones</label>
+              <br><br>
+            <input type="submit" value="Enviar">
+          </form>    
+          </section>
+
+
+         <br><br><br>
+
+
+
+    <p style="text-align: center; font-size: 24px; font-weight: bold;">
+      <a href="#inicio" style="text-decoration: none; color: black;">↑ Volver al inicio</a>
+    </p>
+
+    
+                <footer>
+          <p>Funeraria2025DP</p>
+        </footer>
+      </div>
+
+
+
+</body>
+</html>
