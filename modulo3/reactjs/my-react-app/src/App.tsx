@@ -76,7 +76,7 @@ function App() {
 export default App;
 */
 
-import ParentInputNotifier from './Props/ParentInputNotifier';
+/*import ParentInputNotifier from './Props/ParentInputNotifier';
 import ParentUserList from './Props/ParentUserList';
 
 import ParentLoginForm from './Props/ParentLoginForm';
@@ -90,6 +90,33 @@ function App() {
     </>
   );
 }
+export default App;*/
+
+
+
+import AccessWithLimit from './useState/AccessWithLimit';
+import HoverFont from './useState/HoverFont';
+import LoginWithLimit from './useState/LoginWithLimit';
+import PostLikes from './useState/PostLikes';
+import LanguageSwitcher from './useState/LanguageSwitcher';
+import MultiSwitch from './useState/MultiSwitch';
+
+
+function App() {
+  return (
+    <>
+    <HoverFont/>
+    <AccessWithLimit/>
+    <LoginWithLimit/>
+    <PostLikes/>
+    <LanguageSwitcher/>
+    <MultiSwitch/>
+
+
+    </>
+  );
+}
+
 export default App;
 
 
