@@ -100,6 +100,13 @@ import LoginWithLimit from './useState/LoginWithLimit';
 import PostLikes from './useState/PostLikes';
 import LanguageSwitcher from './useState/LanguageSwitcher';
 import MultiSwitch from './useState/MultiSwitch';
+import DinamicColor from './useState/DynamicColor';
+import ClickHistory from './useState/ClickHistory';
+import LogEffect from './useEffect/LogEffect';
+import FetchUser from './useEffect/FetchUser';
+import Clock from './useEffect/Clock';
+import ScrollLogger from './useEffect/ScrollLogger';
+import DynamicTitle from './useEffect/DynamicTitle';
 
 
 function App() {
@@ -111,6 +118,13 @@ function App() {
     <PostLikes/>
     <LanguageSwitcher/>
     <MultiSwitch/>
+    <DinamicColor/>
+    <ClickHistory/>
+    <LogEffect/>
+    <FetchUser/>
+    <Clock/>
+    <ScrollLogger/>
+    <DynamicTitle/>
 
 
     </>
