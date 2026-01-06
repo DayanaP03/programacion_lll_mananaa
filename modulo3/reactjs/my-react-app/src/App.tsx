@@ -107,9 +107,13 @@ import FetchUser from './useEffect/FetchUser';
 import Clock from './useEffect/Clock';
 import ScrollLogger from './useEffect/ScrollLogger';
 import DynamicTitle from './useEffect/DynamicTitle';
+import FocoAutomatico from './useRef/FocoAutomatico';
+import UseIdHook from './useId/useIdHook';
+import LoginCampos from './useId/loginCampos';
+import { BuscadorUseTransition } from './useTransition/BuscadorUseTransition';
 
 
-function App() {
+/*function App() {
   return (
     <>
     <HoverFont/>
@@ -125,6 +129,7 @@ function App() {
     <Clock/>
     <ScrollLogger/>
     <DynamicTitle/>
+    <FocoAutomatico/>
 
 
     </>
@@ -132,6 +137,26 @@ function App() {
 }
 
 
-export default App;
+
+export default App;*/
+
+
+import BusquedaDiferidaDeffedn from './useDeferredValue/BusquedaDiferidaDeferred';
+import Registro from './useDeferredValue/Registro';
+
+export default function App() {
+  return (
+    <>
+
+      <BusquedaDiferidaDeffedn/>
+      <Registro/>
+      
+
+
+    
+    </>
+  );
+}
+
 
 
