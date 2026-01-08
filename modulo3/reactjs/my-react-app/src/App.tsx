@@ -143,6 +143,9 @@ export default App;*/
 
 import BusquedaDiferidaDeffedn from './useDeferredValue/BusquedaDiferidaDeferred';
 import Registro from './useDeferredValue/Registro';
+import FormularioBasico from './formularios/FormularioBasico';
+import FormularioRHF from './formularios/FormularioRHF';
+import FormularioZod from './formularios/FormularioZod';
 
 export default function App() {
   return (
@@ -150,6 +153,11 @@ export default function App() {
 
       <BusquedaDiferidaDeffedn/>
       <Registro/>
+      <FormularioBasico/>
+      <FormularioRHF/>
+      <FormularioZod/>
+      
+      
       
 
 

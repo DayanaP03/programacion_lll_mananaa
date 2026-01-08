@@ -19,7 +19,7 @@ export default function AreaTriangulo() {
     const resultado = (b * h) / 2;
     setArea(resultado);
     setMensaje(' Cálculo realizado correctamente');
-  };
+    };
 
   return (
     <div>
